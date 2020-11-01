@@ -1,0 +1,28 @@
+﻿
+@model ProduitListViewModel
+
+      <table class="table">
+          <thead class="thead-dark">
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Prix Vente HTT</th>
+                  <th scope="col">Tva</th>
+                  <th scope="col">Prix Vente TTC</th>
+
+              </tr>
+          </thead>
+          <tbody>
+              @foreach(var p in Model.Produits)
+              {
+              <tr>
+                  <th scope="row"><img src="@p.ImageUrl" alt="" width="150" height="50"></th>
+                  <td>@p.NomProduit</td>
+                  <td>@p.PrixVentHT.ToString("C")</td>
+                  <td>@p.Tva</td>
+                  <td>@p.PrixVenteTTC.ToString("C")</td>
+              </tr>
+              }
+          </tbody>
+
+      </table>
