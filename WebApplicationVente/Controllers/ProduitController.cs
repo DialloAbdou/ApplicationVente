@@ -24,5 +24,15 @@ namespace WebApplicationVente.Controllers
             prduitsViewModel.Produits = _produitRepository.GetAllProduits();
             return View(prduitsViewModel);
         }
+
+        public IActionResult Detail(int idproduit)
+        {
+            var produit = _produitRepository.GetProduit(idproduit);
+            if(produit==null)
+                return NotFound();
+            return View(produit);
+        }
+           
+        
     }
 }

@@ -19,8 +19,15 @@ using WebApplicationVente.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "E:\AspNet2020\WebApplicationVente\WebApplicationVente\Views\_ViewImports.cshtml"
+using WebApplicationVente.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0372b56b07927b459402caf2def7e32d4a483ac8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4eed14134e576600b0845ad012d523bde388449f", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

@@ -1,0 +1,11 @@
+﻿
+@model Produit
+<tr>
+    <th scope="row"><a asp-controller="Produit" asp-action="Detail" asp-route-idproduit="@Model.ProduitId"><img src="@Model.ImageUrl" alt="" width="150" height="50"></a></th>
+    <td>@Model.NomProduit</td>
+    <td>@Model.PrixVentHT.ToString("C")</td>
+    <td>@Model.Tva</td>
+    <td>@Model.PrixVenteTTC.ToString("C")</td>
+    <td scope="row"><a asp-controller="ShoppingCart"asp-action="AddToShoppingCart" asp-route-prodId="@Model.ProduitId" width="150" height="50">Add</a></td>
+</tr>
+

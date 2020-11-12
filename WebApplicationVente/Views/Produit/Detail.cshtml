@@ -1,0 +1,15 @@
+﻿@model Produit
+
+<h2>Detail du Produit</h2>
+<div class="col-sm-4 row-col-lg-4 col-md-4">
+   <h2>
+       <a>@Model.NomProduit</a>
+   </h2>
+    <img src="@Model.ImageUrl" alt="imageProduit" width="250" height="500" />
+    <div class="caption-full">
+        <p>@Model.PrixVentHT.ToString("C")</p>
+        <p>@Model.Tva</p>
+        <p>@Model.PrixVenteTTC.ToString("C")</p>
+    </div>
+</div>
+

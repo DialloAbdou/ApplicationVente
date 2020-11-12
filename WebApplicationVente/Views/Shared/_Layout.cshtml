@@ -7,14 +7,24 @@
     <script src="~/Lib/jquery/jquery.js"></script>
     <script src="~/Lib/bootstrap/js/bootstrap.js"></script>
     <link href="~/contents/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div>
-                @RenderBody()
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" asp-controller="Home" asp-action="Index">Home</a>
+                    <a class="nav-item nav-link active" asp-controller="Produit" asp-action="List">Produit</a>
+                    @await Component.InvokeAsync("ShoppingCartSummary")
+                    <a class="nav-item nav-link active" asp-controller="Contact" asp-action="Index">Contact</a>
+
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            @RenderBody()
         </div>
 
     </div>

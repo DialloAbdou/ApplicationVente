@@ -1,0 +1,21 @@
+﻿
+@model ProduitListViewModel
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prix Vente HTT</th>
+            <th scope="col">Tva</th>
+            <th scope="col">Prix Vente TTC</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model.Produits)
+        {
+           <partial name="_CardProduit" model="@p" />
+        }
+    </tbody>
+
+</table>
