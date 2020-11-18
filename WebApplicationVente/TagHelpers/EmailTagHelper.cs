@@ -16,7 +16,6 @@ namespace WebApplicationVente.TagHelpers
             output.TagName = "a";
             output.Attributes.SetAttribute("href", "mailTo" + Adresse);
             output.Content.SetContent(Content);
-
         
         }
 

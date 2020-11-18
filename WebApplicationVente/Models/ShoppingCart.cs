@@ -20,7 +20,7 @@ namespace WebApplicationVente.Models
 
         }
         /*
-         * * Creation de ma Session
+         * * Creation Session de mon panier
          */
         public static ShoppingCart GetCart(IServiceProvider service)
         {
@@ -28,7 +28,7 @@ namespace WebApplicationVente.Models
             var context = service.GetService<AppDbContext>();
             var sessionCart = session.GetString("cartIdSession") ?? Guid.NewGuid().ToString();
             session.SetString("cartIdSession", sessionCart);
-            return new ShoppingCart(context) { ShoppingCartSessionId=sessionCart};
+            return new ShoppingCart(context) {ShoppingCartSessionId=sessionCart};
         }
        
         /*

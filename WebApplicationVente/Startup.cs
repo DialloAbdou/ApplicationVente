@@ -36,6 +36,7 @@ namespace WebApplicationVente
             services.AddControllersWithViews(); // sur Framework MVC
             services.AddScoped<IProduitRepository, ProduitRepository>();
             services.AddScoped<ICategorieRepository, CategorieRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
             services.AddHttpContextAccessor();
             services.AddSession();
