@@ -18,9 +18,37 @@ namespace WebApplicationVente.Controllers
             _shoppingCart = shoppingCart;
                 
         }
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult CreateOrder()    
         {
             return View();
         }
+        [HttpPost]
+
+        public IActionResult CreateOrder(Order order)
+        {
+            var items = _shoppingCart.GetShoppingCartItems();
+            _shoppingCart.shoppingCartItems = items;
+            if(_shoppingCart.shoppingCartItems.Count == 0)
+            {
+                ModelState.AddModelError("", "Your Cart is empty Add your Produit");
+            }
+            if (ModelState.IsValid)
+            {
+                _orderRepository.CreateOrder(order);
+                _shoppingCart.clearCart();
+                return RedirectToAction("ConfirmOrder");
+            }
+            return View(order);
+        }
+
+        public IActionResult ConfirmOrder()
+        {
+            return View();
+        }
+       
+
+
+
     }
 }

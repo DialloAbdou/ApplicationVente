@@ -128,3 +128,5 @@ E:\AspNet2020\WebApplicationVente\WebApplicationVente\obj\Debug\netcoreapp3.0\We
 E:\AspNet2020\WebApplicationVente\WebApplicationVente\obj\Debug\netcoreapp3.0\Razor\Views\ShoppingCart\Index.cshtml.g.cs
 E:\AspNet2020\WebApplicationVente\WebApplicationVente\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
 E:\AspNet2020\WebApplicationVente\WebApplicationVente\obj\Debug\netcoreapp3.0\Razor\Views\Contact\Index.cshtml.g.cs
+E:\AspNet2020\WebApplicationVente\WebApplicationVente\obj\Debug\netcoreapp3.0\Razor\Views\Order\CreateOrder.cshtml.g.cs
+E:\AspNet2020\WebApplicationVente\WebApplicationVente\obj\Debug\netcoreapp3.0\Razor\Views\Order\ConfirmOrder.cshtml.g.cs

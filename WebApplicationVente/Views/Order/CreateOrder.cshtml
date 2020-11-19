@@ -1,0 +1,110 @@
+﻿@model Order
+
+<h1>CreateOrder</h1>
+
+<h4>Order</h4>
+<hr />
+
+
+<form class="col-12" asp-controller="Order" asp-action="CreateOrder" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    
+
+    <div class="form-group">
+
+        <label asp-for="FirstName" class="control-label col-m-2"></label>
+
+        <div class="col-md-5">
+            <input asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <label asp-for="LastName" class="control-label col-md-2"></label>
+        <div class="col-md-5">
+
+            <input asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+
+        <label asp-for="AdresseLine1" class="control-label col-md-2"></label>
+        <div class="col-md-5">
+            <input asp-for="AdresseLine1" class="form-control" />
+            <span asp-validation-for="AdresseLine1" class="text-danger"></span>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="AdresseLine2" class="control-label col-md-2"></label>
+        <div class="col-md-5">
+            <input asp-for="AdresseLine2" class="form-control" />
+            <span asp-validation-for="AdresseLine2" class="text-danger"></span>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <label asp-for="ZipCode" class="control-label col-m-2"></label>
+        <div class="col-md-5">
+            <input asp-for="ZipCode" class="form-control" />
+            <span asp-validation-for="ZipCode" class="text-danger"></span>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <label asp-for="City" class="control-label col-m-2"></label>
+        <div class="col-md-5">
+
+            <input asp-for="City" class="form-control" />
+            <span asp-validation-for="City" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+
+        <label asp-for="State" class="control-label col-md-2"></label>
+        <div class="col-md-5">
+            <input asp-for="State" class="form-control" />
+            <span asp-validation-for="State" class="text-danger"></span>
+
+        </div>
+    </div>
+    <div class="form-group">
+
+        <label asp-for="Country" class="control-label col-md-2"></label>
+        <div class="col-md-5">
+            <input asp-for="Country" class="form-control" />
+            <span asp-validation-for="Country" class="text-danger"></span>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <label asp-for="PhoneNumber" class="control-label col-m-2"></label>
+        <div class="col-md-5">
+            <input asp-for="PhoneNumber" class="form-control" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+
+        </div>
+    </div>
+    <div class="form-group">
+
+        <label asp-for="Email" class="control-label col-m-2"></label>
+        <div class="col-md-5">
+
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
